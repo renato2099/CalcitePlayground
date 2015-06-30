@@ -24,6 +24,7 @@ public class CalciteMysql {
         Class.forName("com.mysql.jdbc.Driver");
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setUrl("jdbc:mysql://localhost");
+        // TODO maybe not hardcoding the values?
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         dataSource.setDefaultCatalog("test");
